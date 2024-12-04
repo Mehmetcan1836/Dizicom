@@ -1,0 +1,285 @@
+/* Sayfa Genel Tasarım */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık ve H1 */
+h1 {
+    color: #343a40;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form düzenlemeleri */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+form .col-md-3,
+form .col-md-2,
+form .col-md-12 {
+    flex: 1;
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+form .form-control {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Rulet Kısmı */
+.roulette-container {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    background-color: #007bff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease-out;
+}
+
+.roulette {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 2s ease-out;
+}
+
+.roulette button {
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: #28a745;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.roulette button:hover {
+    background-color: #218838;
+}
+
+/* Sonuç Kartları */
+.card {
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+}
+
+/* Sonuç Görünümü */
+.card-img-top {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body .card-title {
+    font-size: 1.2rem;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.card-body .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Butonlar */
+button, .btn {
+    border-radius: 50px; /* Butonları yuvarlatmak */
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sonuçlar Kısmı */
+h2 {
+    font-size: 1.8rem;
+    color: #343a40;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border: none;
+}
+
+#scrollToTopBtn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .roulette-container {
+        width: 80%;
+        height: 300px;
+    }
+
+    .roulette button {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .col-md-3, .col-md-2, .col-md-12 {
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+
+.navbar {
+    background-color: #343a40;
+    padding: 1rem;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #343a40;
+    object-fit: cover;
+}
+
+.profile-header .profile-info {
+    flex: 1;
+}
+
+.profile-header .profile-info h1 {
+    font-size: 1.8rem;
+    color: #343a40;
+    margin: 0 0 0.5rem 0;
+}
+
+.profile-header .profile-info p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.edit-profile-btn {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+}
+
+.profile-body {
+    margin-top: 2rem;
+}
+
+.profile-body h2 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+.profile-body p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
